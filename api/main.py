@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+app.secret_key = "abc"
 
 @app.route("/")
 def home():
@@ -11,3 +11,5 @@ def home():
 def page_404(error):
     print(error)
     return render_template("404.html")
+
+app.run()
