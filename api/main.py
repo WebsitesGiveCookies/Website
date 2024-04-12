@@ -5,9 +5,6 @@ app.secret_key = "abc"
 
 @app.route("/")
 def home():
-    return "home page"
+    return render_template("index.html")
 
-@app.errorhandler(404)
-def page_404(error):
-    print(error)
-    return render_template("404.html")
+  
