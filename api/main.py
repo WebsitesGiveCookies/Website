@@ -11,5 +11,3 @@ def home():
 def page_404(error):
     print(error)
     return render_template("404.html")
-
-app.run()
