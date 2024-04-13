@@ -1,3 +1,3 @@
 git add .
 git commit -m "upload"
-git push origin master --force
+git push origin madalina --force
